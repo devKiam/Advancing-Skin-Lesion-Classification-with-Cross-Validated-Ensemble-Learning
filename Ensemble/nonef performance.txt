@@ -1,0 +1,16 @@
+Epoch: 1 | test_loss: 1.0930 | test_acc: 0.9169
+Evaluation report on Test data: 
+
+              precision    recall  f1-score   support
+
+         mel       0.98      0.69      0.81        65
+        vasc       0.91      0.94      0.92       102
+          df       0.82      0.89      0.86       219
+          nv       0.77      0.77      0.77        22
+         bkl       0.89      0.64      0.75       222
+       akiec       0.94      0.98      0.96      1340
+         bcc       0.93      0.89      0.91        28
+
+    accuracy                           0.92      1998
+   macro avg       0.89      0.83      0.85      1998
+weighted avg       0.92      0.92      0.91      1998
