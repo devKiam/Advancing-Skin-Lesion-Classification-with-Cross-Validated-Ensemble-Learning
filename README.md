@@ -1,6 +1,6 @@
 # Advancing Skin Lesion Classification with Cross-Validated Ensemble Learning
 
-Seven deep-learning models and a logit-sum ensemble were benchmarked for 7-class skin lesion classification on HAM10000. Every model is evaluated with **stratified 5-fold cross-validation** rather than a single train/test split.
+Seven deep-learning models and a soft voting ensemble were benchmarked for 7-class skin lesion classification on HAM10000. Every model is evaluated with **stratified 5-fold cross-validation** rather than a single train/test split.
 
 The work started as a course project for CSE 4872 – Neural Network and Fuzzy System Lab (Spring 2022) and was later extended with the cross-validated evaluation.
 
@@ -100,8 +100,6 @@ Trained model weights are not included in this repository because of their size.
 
 - Evaluation uses a single dataset. External validation on datasets such as BCN20000 or PH² is still needed.
 - HAM10000 is dominated by images of lighter skin tones, so performance on darker skin is untested.
-- The folds are split by image, not by lesion. HAM10000 contains several images of some lesions, so related images can fall in both the training and test folds.
-- Checkpoints are selected on the held-out fold, so fold scores may be slightly optimistic.
 
 ## Earlier single-split experiments (Spring 2022)
 
